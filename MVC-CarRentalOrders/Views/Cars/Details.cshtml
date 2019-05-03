@@ -1,0 +1,98 @@
+﻿@model MVC_CarRentalOrders.Car
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Car</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.TagNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TagNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Make)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Make)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Model)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Model)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CarYear)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CarYear)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Category)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Category)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.mp3Player)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.mp3Player)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DVDPlayer)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DVDPlayer)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AirConditioner)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AirConditioner)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Navigation)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Navigation)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Available)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Available)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

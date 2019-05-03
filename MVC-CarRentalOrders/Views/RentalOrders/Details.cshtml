@@ -1,0 +1,74 @@
+﻿@model MVC_CarRentalOrders.RentalOrder
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>RentalOrder</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.DateProcessed)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateProcessed)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RentStartDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RentStartDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RentEndDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RentEndDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Days)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Days)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Car.Make)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Car.Make)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Customer.DriverLicenseNo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Customer.DriverLicenseNo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Employee.EmployeeNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Employee.EmployeeNumber)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

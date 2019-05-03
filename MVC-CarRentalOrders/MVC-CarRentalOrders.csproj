@@ -131,7 +131,11 @@
     <Compile Include="Car.cs">
       <DependentUpon>RentalCars.tt</DependentUpon>
     </Compile>
+    <Compile Include="Controllers\CarsController.cs" />
+    <Compile Include="Controllers\CustomersController.cs" />
+    <Compile Include="Controllers\EmployeesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\RentalOrdersController.cs" />
     <Compile Include="Customer.cs">
       <DependentUpon>RentalCars.tt</DependentUpon>
     </Compile>
@@ -214,6 +218,26 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Cars\Create.cshtml" />
+    <Content Include="Views\Cars\Delete.cshtml" />
+    <Content Include="Views\Cars\Details.cshtml" />
+    <Content Include="Views\Cars\Edit.cshtml" />
+    <Content Include="Views\Cars\Index.cshtml" />
+    <Content Include="Views\Customers\Create.cshtml" />
+    <Content Include="Views\Customers\Delete.cshtml" />
+    <Content Include="Views\Customers\Details.cshtml" />
+    <Content Include="Views\Customers\Edit.cshtml" />
+    <Content Include="Views\Customers\Index.cshtml" />
+    <Content Include="Views\Employees\Create.cshtml" />
+    <Content Include="Views\Employees\Delete.cshtml" />
+    <Content Include="Views\Employees\Details.cshtml" />
+    <Content Include="Views\Employees\Edit.cshtml" />
+    <Content Include="Views\Employees\Index.cshtml" />
+    <Content Include="Views\RentalOrders\Create.cshtml" />
+    <Content Include="Views\RentalOrders\Delete.cshtml" />
+    <Content Include="Views\RentalOrders\Details.cshtml" />
+    <Content Include="Views\RentalOrders\Edit.cshtml" />
+    <Content Include="Views\RentalOrders\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
